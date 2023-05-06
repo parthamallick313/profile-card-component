@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.color {
+  color: #19a2ae;
+}
+
+@layer utilities {
+  .bg-img-top {
+    background-image: url("./images/bg-pattern-top.svg");
+    @apply bg-no-repeat bg-[120%_100%] lg:bg-[-50%_100%];
+  }
+  .bg-img-bottom {
+    background-image: url("./images/bg-pattern-bottom.svg");
+    @apply bg-no-repeat  bg-[-20%_5%] lg:bg-[150%_100%];
+  }
+}
